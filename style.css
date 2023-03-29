@@ -399,6 +399,7 @@ template {
 }
 
 body {
+    position: relative;
     font-size: 1.5rem;
 }
 
@@ -424,8 +425,7 @@ a {
 }
 
 header {
-    position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 header h1, header nav, header .banner-text {
@@ -467,4 +467,42 @@ header img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.company-info {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.company-info img {
+    width: 70rem;
+    height: 50rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    padding: 2rem 3rem 3rem 10rem;
+    width: 50rem;
+    height: 30rem;
+    bottom: .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    left: 65rem;
+    position: absolute;
+    align-items: flex-start;
+}
+
+.info h2 {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 50;
+}
+
+.info p {
+    color: hsl(0, 0%, 44%);
 }
