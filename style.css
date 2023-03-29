@@ -509,6 +509,7 @@ header img {
 
 .creations {
     padding: 0 10rem 0 10rem;
+    margin-bottom: 5rem;
 }
 
 .creations-header {
@@ -548,12 +549,35 @@ header img {
     color: white;
     top: 70%;
     left: 4rem;
+    right: 4rem;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 100;
 }
 
 footer {
+    display: flex;
     background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+footer h2 {
+    margin-left: 4rem;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 12rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+#footer-navigation a {
     color: white;
 }
