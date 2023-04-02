@@ -437,6 +437,10 @@ body {
     font-size: 1.5rem;
 }
 
+.mobile-nav-menu {
+    display: none;
+}
+
 header {
     margin-top: 4rem;
     margin-left: 10rem;
@@ -732,6 +736,11 @@ footer p {
 }
 
 @media screen and (max-width: 520px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         margin-left: 3rem;
         margin-right: 3rem;
@@ -760,12 +769,59 @@ footer p {
         width: 90%;
     }
 
+    .mobile-nav-menu {
+        position: fixed;
+        display: block;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background-color: var(--black);
+        z-index: 1;
+    }
+
+    .mobile-nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .mobile-nav-menu .side-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4rem 2rem 10rem 2rem;
+    }
+
+    .mobile-nav-menu h2 {
+        font-family: 'Alata';
+        color: var(--white);
+    }
+
+    .mobile-nav-menu ul {
+        flex-direction: column;
+        padding-left: 2rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: 'JosefinSans Light';
+        font-weight: 100;
+    }    
+
+    .mobile-nav-menu a {
+        color: var(--white);
+    }
+
+    .mobile-nav-menu button {
+        background-color: transparent;
+        border: none;
+    }
+
     .loopstudios-info {
         display: flex;
         flex-direction: column;
         margin-left: 3rem;
         margin-right: 3rem;
         margin-bottom: 5rem;
+        z-index: -1;
     }
 
     .interactive-photo {
