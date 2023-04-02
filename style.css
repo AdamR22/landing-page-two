@@ -409,6 +409,28 @@ template {
 a {
     text-decoration: none;
     color: var(--black);
+    position: relative;
+}
+
+.site-menu:hover a::after,
+.icons:hover a::after {
+    display: block;
+    content: '';
+    width: 30%;
+    height: 3px;
+    background: var(--white);
+    position: absolute;
+    bottom: 0;
+}
+
+.icons:hover a::after {
+    left: 1rem;
+    top: 3rem;
+}
+
+.site-menu:hover a::after {
+    top: 2.5rem;
+    left: 35%;
 }
 
 body {
@@ -465,7 +487,7 @@ ul {
     border: .2rem solid var(--white);
     left: 10rem;
     top: 15rem;
-    width: 30%;  
+    width: 30%;
     height: 20rem;
 }
 
@@ -477,7 +499,8 @@ ul {
     margin-top: 5rem;
 }
 
-.loopstudios-info, .loopstudios-creations{
+.loopstudios-info,
+.loopstudios-creations {
     position: absolute;
     margin: 10rem;
 }
@@ -553,6 +576,13 @@ ul {
     width: 15rem;
 }
 
+.creations-header button:focus, .creations-header button:hover {
+    transition: background-color 0.5s ease-in;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -564,6 +594,17 @@ ul {
     width: 25.6rem;
     height: 45rem;
     position: relative;
+    cursor: pointer;
+}
+
+.gallery-item:hover h3, .gallery-item:focus h3 {
+    transition: color 0.5s ease-in;
+    color: var(--black);
+}
+
+.gallery-item:hover .overlay, .gallery-item:focus .overlay {
+    transition: background-color 0.5s ease-in;
+    background-color: hsl(0, 0%, 100%, 0.4);
 }
 
 .overlay {
@@ -589,7 +630,7 @@ ul {
     background-size: cover;
 }
 
-#night-arcade{
+#night-arcade {
     background-image: url('./images/desktop/image-night-arcade.jpg');
     background-size: cover;
 }
@@ -624,7 +665,8 @@ ul {
     background-size: cover;
 }
 
-#deep-earth h3, #soccer-team-vr h3 {
+#deep-earth h3,
+#soccer-team-vr h3 {
     padding-right: 4rem;
 }
 
@@ -643,7 +685,8 @@ footer {
     align-items: center;
 }
 
-footer a, footer h2 {
+footer a,
+footer h2 {
     font-family: 'Alata';
     color: var(--white);
 }
