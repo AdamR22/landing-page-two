@@ -436,15 +436,12 @@ ul {
     color: var(--white);
 }
 
-.nav-bar li {
-    font-family: '';
-}
 
 #header-menu {
     margin-left: auto;
 }
 
-#header-menu ul {
+ul {
     gap: 2rem;
 }
 
@@ -640,4 +637,40 @@ footer {
     top: 400vh;
     width: 100%;
     background-color: black;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a, footer h2 {
+    font-family: 'Alata';
+    color: var(--white);
+}
+
+footer p {
+    font-family: 'Alata';
+    color: var(--very-dark-grey);
+}
+
+.left {
+    margin-left: 10rem;
+}
+
+.left ul {
+    padding-left: 0;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 12.5rem;
+}
+
+.right {
+    margin-right: 10rem;
+}
+
+.right p {
+    margin-bottom: 0;
 }
