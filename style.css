@@ -412,8 +412,8 @@ a {
     position: relative;
 }
 
-.site-menu:hover a::after,
-.icons:hover a::after {
+.site-menu a:hover::after,
+.icons a:hover::after {
     display: block;
     content: '';
     width: 30%;
@@ -423,12 +423,12 @@ a {
     bottom: 0;
 }
 
-.icons:hover a::after {
+.icons a:hover::after {
     left: 1rem;
     top: 3rem;
 }
 
-.site-menu:hover a::after {
+.site-menu a:hover::after {
     top: 2.5rem;
     left: 35%;
 }
