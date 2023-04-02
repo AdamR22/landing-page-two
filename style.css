@@ -378,6 +378,8 @@ template {
     display: none;
 }
 
+/* SITE STYLING */
+
 @font-face {
     font-family: 'Alata';
     src: url('./fonts/Alata-Regular.ttf') format('truetype');
@@ -478,7 +480,7 @@ ul {
     margin-top: 5rem;
 }
 
-.loopstudios-info, .loopstudios-creations {
+.loopstudios-info, .loopstudios-creations{
     position: absolute;
     margin: 10rem;
 }
@@ -522,9 +524,120 @@ ul {
     color: var(--dark-grey);
 }
 
+.loopstudios-creations {
+    top: 180%;
+}
+
+.creations-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.creations-header h2 {
+    font-family: 'JosefinSans Light';
+    font-weight: 100;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.creations-header button {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: .4rem;
+    text-transform: uppercase;
+    border: .1rem solid var(--black);
+    font-family: 'JosefinSans';
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1.5rem 1rem 1rem 1rem;
+    width: 15rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-left: 0;
+}
+
+.gallery-item {
+    width: 25.6rem;
+    height: 45rem;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    height: 45rem;
+    width: 25.6rem;
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.image-label {
+    position: absolute;
+    color: var(--white);
+    font-weight: 100;
+    font-family: 'JosefinSans Light';
+    font-size: 3rem;
+    text-transform: uppercase;
+    top: 70%;
+    left: 15%;
+}
+
+#deep-earth {
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+    background-size: cover;
+}
+
+#night-arcade{
+    background-image: url('./images/desktop/image-night-arcade.jpg');
+    background-size: cover;
+}
+
+#soccer-team-vr {
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+    background-size: cover;
+}
+
+#the-grid {
+    background-image: url('./images/desktop/image-grid.jpg');
+    background-size: cover;
+}
+
+#from-up-above-vr {
+    background-image: url('./images/desktop/image-from-above.jpg');
+    background-size: cover;
+}
+
+#aurora-borealis {
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+    background-size: cover;
+}
+
+#the-curiosity {
+    background-image: url('./images/desktop/image-curiosity.jpg');
+    background-size: cover;
+}
+
+#make-it-fisheye {
+    background-image: url('./images/desktop/image-fisheye.jpg');
+    background-size: cover;
+}
+
+#deep-earth h3, #soccer-team-vr h3 {
+    padding-right: 4rem;
+}
+
+#the-grid h3 {
+    padding-right: 10rem;
+}
+
 footer {
     position: absolute;
-    top: 200vh;
-    bottom: 0;
-    width: 100vw;
+    top: 400vh;
+    width: 100%;
+    background-color: black;
 }
